@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import GlobalCases from './covidcases';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <main role="main">
+        <div class="jumbotron">
+          <div class="container">
+            <h1 class="display-3">Covid-19 Information</h1>
+            <p>Covid-19 stats</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+          </div>
+        </div>
+
+        <GlobalCases />
+        <hr />
+      </main>
+    </div> 
   );
 }
 
